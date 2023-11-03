@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codewell | Gradient sign up page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- signup form -->
+    <main>
+        <div class="left">
+            <h1>Gradie</h1>
+            <p>Beautiful gradients in seconds</p>
+
+            <div class="mockup">
+                <img src="./Assets/iPhone Mockup.png" alt="">
+            </div>
+        </div>
+        <div class="right">
+            <h1>Login</h1>
+            <label for="email">Email</label>
+            <input type="email" placeholder="john@example.com" id="email">
+
+            <label for="password">Password</label>
+            <input type="password" placeholder="At least 8 characters" id="password">
+
+            <div class="check">
+                <input type="checkbox" name="terms" id="checkbox">
+                <p>By creating an account, you agree to the <span>Terms & Conditions</span></p>
+            </div>
+
+            <button type="button" id="create">Create an Account</button>
+
+            <div class="errors">
+                <p class="error" id="error1">Password should be at least 8 characters!</p>
+                <p class="error" id="error2">All inputs chould be filled!</p>
+                <p class="error" id="error3">Email address should be valid!</p>
+            </div>
+            <div class="success">
+                <p id="success">Form submitted successfully!</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

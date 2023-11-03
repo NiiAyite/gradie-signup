@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('./Assets/Background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Roboto';
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    background-color: rgb(0, 37, 44);
+    width: 500px;
+    text-align: center;
+    color: white;
+    padding-top: 2rem;
+    border-radius: 20px 0 0 20px;
+}
+
+.left p {
+    color: rgb(35, 103, 118);
+}
+
+.mockup {
+    position: relative;
+    top: .25rem;
+}
+
+.mockup img {
+    width: 450px;
+}
+
+.right {
+    background-color: rgb(246, 246, 246);
+    height: 653.719px;
+    border-radius: 0 20px 20px 0;
+    padding-left: 2rem;
+    width: 370px;
+}
+
+.right h1 {
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: .2rem;
+    font-weight: bold;
+}
+
+input {
+    font-family: 'Roboto';
+    padding: 1rem;
+    width: 300px;
+    border-radius: 5px;
+    border: 1.5px solid gray;
+    margin-bottom: .5rem;
+}
+
+.check {
+    display: flex;
+    width: 300px;
+    align-items: start;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#checkbox {
+    align-self: start;
+    width: 25px;
+    height: 25px;
+    margin-right: 1rem;
+
+}
+
+span {
+    color: rgb(0, 37, 44);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 3rem;
+    width: 334px;
+    padding: 1rem;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    border: none;
+    background-color: rgb(0, 37, 44);
+    color: white;
+    font-weight: bold;
+}
+
+.errors {
+    font-size: .5rem;
+    color: red;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.error {
+    margin-bottom: .5rem;
+    display: none;
+}
+
+.success {
+    color: green;
+    font-size: .5rem;
+    font-weight: bold;
+    display: none;
+}
+
+@media  screen and (max-width: 768px) {
+    body {
+        height: fit-content;
+    }
+
+    main {
+        flex-direction: column;
+        width: 500px;
+        justify-content: start;
+        align-items: center;
+        margin: 2rem;
+    }
+
+    .left {
+        width: fit-content;
+    }
+
+    .right {
+        height: fit-content;
+    }
+
+    .left, .right {
+        border-radius: 0;
+    }
+
+    .mockup img {
+        width: 400px;
+        
+    }
+}
+
+@media screen and (max-width: 375px) {
+    main {
+        margin: 0;
+    }
+}
